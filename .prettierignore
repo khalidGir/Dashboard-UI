@@ -1,0 +1,13 @@
+# Ignore artifacts:
+build
+dist
+.turbo
+*.log
+
+# Ignore directories:
+node_modules
+.git
+
+# Ignore other files
+*.css
+public
