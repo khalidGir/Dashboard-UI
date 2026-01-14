@@ -6,7 +6,7 @@ import useDashboardData from '../hooks/useDashboardData';
 const StatsGrid: React.FC = () => {
   const { statsData, isStatsLoading, statsError } = useDashboardData();
 
-  const iconMap = useMemo(() => ({
+  const iconMap: Record<string, React.ReactElement> = useMemo(() => ({
     'dollar': <FiDollarSign className="text-2xl text-primary" />,
     'users': <FiUsers className="text-2xl text-primary" />,
     'shopping-cart': <FiShoppingCart className="text-2xl text-primary" />,
